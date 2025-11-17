@@ -5,7 +5,10 @@ import Home from "./Components/Home";
 import Services from "./Components/Services";
 import Portfolio from "./Components/Portfolio";
 import Contact from './Components/Contact';
-import Mentions from "./Components/Mentions"
+import Mentions from "./Components/Mentions";
+import Footer from "./Components/Footer";
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
 import './App.css';
 
 export default function App() {
@@ -20,6 +23,7 @@ export default function App() {
         <Route path="/mentions" element={<Mentions />} />
         
       </Routes>
+      <Footer />
     </div>
   );
 }
