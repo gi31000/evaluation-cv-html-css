@@ -1,6 +1,5 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./Contact.jsx";
 
 const Contact = () => {
   return (
@@ -20,7 +19,7 @@ const Contact = () => {
                   <div className="mb-3">
                     <input
                       type="name"
-                      class="form-control"
+                       className="form-control"
                       id="exampleFormControlInput1"
                       placeholder="Votre nom"
                     />
@@ -28,7 +27,7 @@ const Contact = () => {
                   <div className="mb-3">
                     <input
                       type="email"
-                      class="form-control"
+                       className="form-control"
                       id="exampleFormControlInput1"
                       placeholder="Votre adresse email"
                     />
@@ -36,7 +35,7 @@ const Contact = () => {
                   <div className="mb-3">
                     <input
                       type="telephone"
-                      class="form-control"
+                       className="form-control"
                       id="exampleFormControlInput1"
                       placeholder="Votre numéro de téléphone"
                     />

@@ -1,5 +1,4 @@
 import React from "react";
-import "./Services.jsx";
 
 const Services = () => {
   return (
@@ -14,12 +13,10 @@ const Services = () => {
         }}
       >
       </section>
-      <section>
+      <section className="container">
         <h2 className="fw-bold py-4">Mon offre de Services</h2>
-        <p>Voici les prestations sur lesquels je peux intervenir</p>
-        <ul>
-          <hr className="border border-primary border-2 opacity-75"/>
-        </ul>
+        <p>Voici les prestations sur lesquelles je peux intervenir</p>
+        <hr className="border border-primary border-2 opacity-75" />
         <div className="container my-5">
           <div className="row g-4">
             <div className="col-md-4">
@@ -49,7 +46,7 @@ const Services = () => {
                   <h4 className="card-title fw-bold">Développement web</h4>
                   <p className="card-text">
                     Le développement de sites web consiste à créer des sites
-                internet en utilisant des langages de programmation(HTML, CSS,
+                internet en utilisant des langages de programmation (HTML, CSS,
                 Javascript, PHP, etc.) et des frameworks (Bootstrap, React,
                 Angular, etc.).
                   </p>

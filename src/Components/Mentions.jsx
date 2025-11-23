@@ -1,6 +1,5 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./Mentions.jsx";
 
 const Mentions = () => {
   return (
@@ -119,7 +118,7 @@ const Mentions = () => {
               >
                 Pixabay
               </a></p>
-              <p>Le favicon de ce site a été fournie par <a
+              <p>Le favicon de ce site a été fourni par <a
                 href="https://www.flaticon.com/free-icons/john-doe"
                 className="link-primary"
                 target="_blank"
