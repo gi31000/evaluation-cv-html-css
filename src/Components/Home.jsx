@@ -1,6 +1,13 @@
-import React from "react";
+
+import React, { useState, useEffect } from "react";
 
 const Home = () => {
+  const [github, setGithub] = useState(null);
+  useEffect(() => {
+    fetch("https://api.github.com/users/github-johndoe")
+      .then((res) => res.json())
+      .then((data) => setGithub(data));
+  }, []);
   return (
     <main>
       {/* Section hero */}
@@ -54,7 +61,7 @@ const Home = () => {
                   {/* Avatar */}
                   <div className="col-md-5">
                     <img
-                      src="/img/john-doe-about.jpg"
+                      src="https://avatars.githubusercontent.com/u/19842736?v=4"
                       alt="Avatar"
                       className="img-fluid rounded"
                     />
@@ -63,23 +70,23 @@ const Home = () => {
                   {/* Infos */}
                   <div className="col-md-7 text-start mt-3 mt-md-0">
                     <p>
-                      <i className="bi bi-person"></i> John Doe
+                      <i className="bi bi-person"></i> {github?.login}
                     </p>
                     <p>
-                      <i className="bi bi-geo-alt"></i> Lyon, France
+                      <i className="bi bi-geo-alt"></i> {github?.location}
                     </p>
                     <p>
                       <i className="bi bi-card-text"></i> Passionné par le
                       développement web. Toujours en quête de nouveaux projets !
                     </p>
                     <p>
-                      <i className="bi bi-github"></i> Repositories : 1
+                      <i className="bi bi-github"></i> {github?.public_repos}
                     </p>
                     <p>
-                      <i className="bi bi-people"></i> Followers : 16
+                      <i className="bi bi-people"></i> {github?.followers}
                     </p>
                     <p>
-                      <i className="bi bi-person-plus"></i> Following : 0
+                      <i className="bi bi-person-plus"></i> {github?.following}
                     </p>
                   </div>
                 </div>

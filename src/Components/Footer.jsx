@@ -28,9 +28,21 @@ const Footer = () => {
               </li>
               <li>
                 <div>
-                  <i className="bi bi-twitter me-2"></i>
-                  <i className="bi bi-facebook me-2"></i>
-                  <i className="bi bi-linkedin"></i>
+                  <a href="https://github.com/github-johndoe"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    className="text-white me-2 social-icon">
+                    <i className="bi bi-github"></i></a>
+                  <a href="https://facebook.com/github-johndoe"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    className="text-white me-2 social-icon">
+                    <i className="bi bi-facebook"></i></a>
+                  <a href="https://linkedin.com/github-johndoe"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    className="text-white me-2 social-icon">
+                    <i className="bi bi-linkedin"></i></a>
                 </div>
               </li>
             </ul>

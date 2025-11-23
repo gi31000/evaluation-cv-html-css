@@ -60,7 +60,7 @@ const Portfolio = () => {
       <div className="container">
         <h2 className="fw-bold">Portfolio</h2>
         <p className="text-muted">Voici quelques-unes de mes réalisations.</p>
-        <hr className="border-primary underline mx-auto mb-5" />
+        <hr className="border border-primary border-2 opacity-75" />
 
         {/* Grille des projets */}
         <div className="row g-4">
